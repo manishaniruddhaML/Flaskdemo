@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="controls">
+    <button onclick="adjustFontSize('increase')">Increase Text Size</button>
+    <button onclick="adjustFontSize('decrease')">Decrease Text Size</button>
+    <button onclick="toggleContrast()">Toggle High Contrast</button>
+</div>
+
+<p id="content">This is an example of accessible content for elderly users. Feel free to adjust the settings for better readability.</p>
+
+<h2>Feedback</h2>
+<form id="feedback-form">
+    <label for="feedback">Your Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+    <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+</form>
+{% endblock %}
